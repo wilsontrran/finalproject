@@ -57,7 +57,7 @@ hr{
 	height: 2px;
 	width: 96%;
 	background-color: black;
-	position: absolute;
+	position: fixed;
 	top: 94%;
 	left: 2%;
 	
@@ -101,7 +101,7 @@ footer{
   padding: 0.5em;
   color: #D00D2D;
   font-size: 0.75em;
-  position: absolute;
+  position: fixed;
   top: 95%;
   left: 5%;
   
