@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+  
+  <a href="http:\\www.csun.edu" id="csunlink"><img src="https://mycsun.app.box.com/representation/file_version_28929900447/image_2048/1.png?shared_name=r6x373ksc0hnfhvlc772wbcpjwd7yqk6" id ="logo"/></a>
+  <link rel="stylesheet" type="text/css" href="theme.css">
+  <script src="employee.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <ul id="nav">
+  <li><a href="index.html">Absence Form</a></li>
+  <li><a href="emer.html">Emergency Authorization</a></li>
+
+</ul>
+
+  <form action="" method="post" id="theForm">
+    
+  <fieldset>
+    <legend>Absence Form</legend>
+    <h2 id="infoheader">Student Info</h2>
+    
+    <label for="fname">First Name</label>
+    <br>
+    <input type="text" value="" id="fname">
+    <br><br>
+    
+    <label for="lname">Last Name</label>
+    <br>
+    <input type="text" value="" id="lname"> 
+    <br><br>
+	
+    <label for="date">Date Absent</label>
+    <br>
+	<input type="date" id="date">
+	<br><br>
+	
+	<label for="grade">Student Grade Level</label>
+    <br>
+    <select form="theForm" id="grade">
+            <option value="0" >Kindergarten
+      </option>
+            <option value="1">
+        1st Grade
+      </option>
+            <option value="2">
+        2nd Grade
+      </option>
+            <option value="3">
+        3rd Grade
+      </option>
+            <option value="4">
+        4th Grade
+      </option>
+            <option value="5">
+        5th Grade
+      </option>
+            <option value="6">
+        6th Grade
+      </option>
+            <option value="7">
+        7th Grade
+      </option>
+            <option value="8">
+        8th Grade
+      </option>
+            <option value="9">
+        9th Grade
+      </option>
+            <option value="10">
+        10th Grade
+      </option>
+            <option value="11">
+        11th Grade
+      </option>
+            <option value="12">
+        12th Grade
+      </option>
+    </select>
+   <br><br>
+	
+	<label for="Guardian">Guardian/Parent Name</label>
+	<br>
+	<input type="text" id="guardian">
+	<br><br>
+	
+	<label for="relationship" id="relationship">Relationship</label>
+	<br>
+<select form="theForm" id="guardian">
+  <option value="Mother">Mother</option>
+  <option value="Father">Father</option>
+  <option value="Guardian">Legal Guardian</option>
+    </select>  
+    <br><br>
+	
+	<label for="absent" id="absent">Reason for absense</label><br>
+	<textarea name="reason" rows="4" cols="50" form="theForm" placeholder="_____ will be absent due to..." required></textarea>
+	
+
+    
+    <input type="submit" value="Submit" id="submit">
+    
+    <br><br>
+    <span id="foo">
+        
+        
+      </span>
+    
+  </fieldset>
+  </form>
+  
+  
+	<hr>
+  <footer>Copyright CSUN</footer>
+  
+
+</body>
+</html>
