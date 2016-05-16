@@ -1,13 +1,12 @@
 html{
 	width: 50%;
 	height: 100%;
-
 }
 
 body{
 
   padding: 0.25em;
-  background-color:white;
+  background-color: white;
   font-family:"Georgia";
   height: 100%;
   width: 100%;
@@ -19,7 +18,23 @@ body{
   z-index: 2;
 }
 
-#infoheader{
+.infoheader{
+	font-family:"Helvetica";
+	color: white;
+	position: relative;
+	top: 1.2em;
+	
+}
+
+#infoh{
+	font-family:"Helvetica";
+	color: white;
+	position: relative;
+	top: 1.2em;
+	
+}
+
+#dailyrep{
 	font-family:"Helvetica";
 	color: #D00D2D;
 	
@@ -53,6 +68,8 @@ li a {
 	border: 2px;
 }
 
+
+
 hr{
 	height: 2px;
 	width: 96%;
@@ -66,33 +83,40 @@ hr{
 li a:hover {
     background-color: #55565A;
     color: white;
+	font-size:120%;
 }
 
 
 li a:active {
     background-color: #D00D2D;
+	font-size: 120%;
     color: white;
 }
 
 
 
 fieldset{
-  height: 35em;
+  height: 40em;
   width: 25em;
-   border-width: 0.25em;
-  border-color: #D8D2C4;
+
   float: left;
-  background-color: #BEC6C3; 
+  background-color: #A9A8A9; 
 }
 
 form{
   position: absolute;
   z-index: 0;
   top: 8em;
-  left: 22em;
+  left: 20em;
+   
+}
 
-  
-  
+#parentkey{
+	position: absolute;
+  z-index: 0;
+  top: 8em;
+  left: 50em;
+	
 }
 
 
@@ -100,14 +124,33 @@ form{
 footer{
   padding: 0.5em;
   color: #D00D2D;
-  font-size: 0.75em;
+  font-size: 0.9em;
   position: fixed;
   top: 95%;
   left: 5%;
   
 }
 
-legend{
-  color:#D00D2D;
-  
+#highlight{
+	background-color:#D00D2D;
+	height: 4em;
+	position: relative;
+	top: -1em;
 }
+
+#highlig{
+	background-color:#D00D2D;
+	height: 4em;
+	position: relative;
+	top: 1em;
+}
+
+legend{
+	font-size: 20px;
+	font-weight: bold;
+	color:white;
+	background-color: #D00D2D;
+	
+	
+}
+

@@ -4,45 +4,38 @@
 <head>
   
   
-  <a href="http:\\www.csun.edu" id="csunlink"><img src="https://mycsun.app.box.com/representation/file_version_28929900447/image_2048/1.png?shared_name=r6x373ksc0hnfhvlc772wbcpjwd7yqk6" id ="logo"/></a>
+  <a href="http:\\www.csun.edu" id="csunlink"><img src="logo.png" id ="logo"/></a>
   <link rel="stylesheet" type="text/css" href="theme.css">
-  <script src="employee.js"></script>
+  <script src="absent.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <title>Absent/Early Sign Out Form</title>
 </head>
 <body>
   <ul id="nav">
-  <li><a href="index.html">Absence Form</a></li>
-  <li><a href="emer.html">Emergency Authorization</a></li>
+  <li><a href="index.html">Absence/Early Sign Out Form</a></li>
+  <li><a href="emergency.html">Emergency Authorization</a></li>
 
 </ul>
 
   <form action="" method="post" id="theForm">
     
   <fieldset>
-    <legend>Absence Form</legend>
-    <h2 id="infoheader">Student Info</h2>
+    <legend>Absence/Early Sign Out Form</legend>
+
     
-    <label for="fname">First Name</label>
+    <label for="fname">Student Name</label>
     <br>
-    <input type="text" value="" id="fname">
+    <input type="text" value="" id="name">
     <br><br>
-    
-    <label for="lname">Last Name</label>
-    <br>
-    <input type="text" value="" id="lname"> 
-    <br><br>
+
 	
-    <label for="date">Date Absent</label>
-    <br>
-	<input type="date" id="date">
-	<br><br>
+
 	
 	<label for="grade">Student Grade Level</label>
     <br>
     <select form="theForm" id="grade">
-            <option value="0" >Kindergarten
+      <option value="0" >Kindergarten
       </option>
             <option value="1">
         1st Grade
@@ -82,10 +75,15 @@
       </option>
     </select>
    <br><br>
+   
+    <label for="date">Date Absent</label>
+    <br>
+	<input type="date" id="date">
+	<br><br>
 	
 	<label for="Guardian">Guardian/Parent Name</label>
 	<br>
-	<input type="text" id="guardian">
+	<input type="text" id="guardianx">
 	<br><br>
 	
 	<label for="relationship" id="relationship">Relationship</label>
@@ -94,25 +92,68 @@
   <option value="Mother">Mother</option>
   <option value="Father">Father</option>
   <option value="Guardian">Legal Guardian</option>
-    </select>  
+    </select><br>
+	
+	<br>
+	<label for="parentnumber">Parent/Guardian Key</label><br>
+	<input type="number" id="pkey" name="pkey"><br>
+	
+	    <br>
+	<label for="parentnumber">Daytime Phone Number</label><br>
+	<input type="number" id="phone" name="phone"><br>
+	
+	    <br>
+	<label for="parentnumber">Parent/Guardian Key</label><br>
+	<input type="email" id="email" name="email"><br><br>
+	
+	
+	<label for="signout">Type</label>
+	<select form="theForm" id="type">
+      <option name="type" value="absent" checked>Absent</option>
+      <option  name="type" value="early">Early Sign Out</option>
+    </select>
     <br><br>
 	
-	<label for="absent" id="absent">Reason for absense</label><br>
-	<textarea name="reason" rows="4" cols="50" form="theForm" placeholder="_____ will be absent due to..." required></textarea>
-	
-
-    
+	<label for="absent">Reason for absense/Early Sign Out</label><br>
+	<textarea name="reason" rows="4" cols="50" form="theForm" id="text" placeholder="_____ will be absent/signing out early due to..." ></textarea>
+	   
     <input type="submit" value="Submit" id="submit">
-    
-    <br><br>
-    <span id="foo">
-        
-        
-      </span>
-    
+	
   </fieldset>
   </form>
   
+  
+  
+  
+  
+ <form action="" method="post" id="parentkey">
+  <fieldset>
+  <legend>ETC</legend>
+  <div id="highlight"><h2 class="infoheader">&nbsp;Generate a Parent Key</h2></div>
+  	<label for="Guardian">Guardian/Parent Name</label>
+	<br>
+	<input type="text" id="guardianname">
+	<br><br>
+  
+  <input type="submit" value="Generate">
+  
+   
+  <br><br>
+	
+	 <div id="highlig"><h2 id="infoh">&nbsp;Generate the Daily Report</h2></div>
+	 <br><br>
+    <button type="button" id="generate">Generate Daily Report</button>
+<span id="dailyspan">
+  </span> 
+    <br><br>
+	
+	
+  
+  
+  </fieldset>
+  </form>
+  
+
   
 	<hr>
   <footer>Copyright CSUN</footer>
